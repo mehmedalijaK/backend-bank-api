@@ -148,7 +148,7 @@
  -  **Authentication Required?** Yes 
 -  **Permissions?** Admin
 - **ErrorMessage:**  InvalidData()
-#### Request Payload  
+#### Response Payload  
 ```json
 {
     "content": [
