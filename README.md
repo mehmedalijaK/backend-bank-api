@@ -219,3 +219,33 @@
     "empty": false
 }
 ```
+
+## Search Employees Endpoint Details
+-  **Method:** Put 
+-  **URL:**  `/employee/1fad2c01-f82f-41a6-822c-8ca1b3232575
+ -  **Authentication Required?** Yes 
+-  **Permissions?** Admin
+- **ErrorMessage:**  InvalidData()
+#### Request Payload  
+
+```
+public record EmployeeUpdateDto(
+    @JsonProperty("first_name")
+    String firstName,
+    @JsonProperty("last_name")
+    String lastName,
+    @JsonProperty("date_of_birth")
+    LocalDate dateOfBirth,
+    String gender,
+    @Email
+    String email,
+    String password,
+    String username,
+    String phone,
+    String address,
+    List<String> privilege,
+    String position,
+    String department
+) {
+}
+```
