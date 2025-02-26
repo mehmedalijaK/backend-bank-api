@@ -59,7 +59,7 @@
 }
 ```
 
-## Employee Refresh token Endpoint Details
+## Employee logout Endpoint Details
 -  **Method:** POST 
 -  **URL:**  `/auth/logout` 
  -  **Authentication Required?** Yes 
