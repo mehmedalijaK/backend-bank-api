@@ -222,7 +222,7 @@
 
 ## Search Employees Endpoint Details
 -  **Method:** Put 
--  **URL:**  `/employee/1fad2c01-f82f-41a6-822c-8ca1b3232575
+-  **URL:**  `/employee/1fad2c01-f82f-41a6-822c-8ca1b3232575`
  -  **Authentication Required?** Yes 
 -  **Permissions?** Admin
 - **ErrorMessage:**  InvalidData() || DuplicateEmail(email) || DuplicateUsername(username)
