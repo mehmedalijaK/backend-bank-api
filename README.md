@@ -141,3 +141,81 @@
   "department": "IT"
 }
 ```
+
+## Search Employees Endpoint Details
+-  **Method:** Get 
+-  **URL:**  `/employee/search?firstName=John&lastName=Doe&email=john.doe@example.com&position=Manager&page=0&size=10` 
+ -  **Authentication Required?** Yes 
+-  **Permissions?** Admin
+- **ErrorMessage:**  InvalidData()
+#### Request Payload  
+```json
+{
+    "content": [
+        {
+            "id": "1fad2c01-f82f-41a6-822c-8ca1b3232575",
+            "firstName": "John",
+            "lastName": "Doe",
+            "dateOfBirth": "1990-01-01",
+            "gender": "Male",
+            "email": "john.doe@example.com",
+            "phone": "123-456-7890",
+            "address": "123 Main St",
+            "username": "johndoe",
+            "position": "Developer",
+            "department": "IT"
+        },
+        {
+            "id": "1de54a3a-d879-4154-aa3a-e40598186f93",
+            "firstName": "John",
+            "lastName": "Doe",
+            "dateOfBirth": "1990-05-15",
+            "gender": "Male",
+            "email": "johndoe@example.com",
+            "phone": "+1234567890",
+            "address": "123 Main Street, City, Country",
+            "username": "johndoee",
+            "position": "Software Engineer",
+            "department": "IT"
+        },
+        {
+            "id": "434b7887-e493-4707-a84c-0f93e922321a",
+            "firstName": "John",
+            "lastName": "Doe",
+            "dateOfBirth": "1990-05-15",
+            "gender": "Male",
+            "email": "alija@example.com",
+            "phone": "+1234567890",
+            "address": "123 Main Street, City, Country",
+            "username": "alija",
+            "position": "Software Engineer",
+            "department": "IT"
+        }
+    ],
+    "pageable": {
+        "pageNumber": 0,
+        "pageSize": 10,
+        "sort": {
+            "empty": true,
+            "sorted": false,
+            "unsorted": true
+        },
+        "offset": 0,
+        "paged": true,
+        "unpaged": false
+    },
+    "last": true,
+    "totalElements": 3,
+    "totalPages": 1,
+    "size": 10,
+    "number": 0,
+    "sort": {
+        "empty": true,
+        "sorted": false,
+        "unsorted": true
+    },
+    "first": true,
+    "numberOfElements": 3,
+    "empty": false
+}
+```
