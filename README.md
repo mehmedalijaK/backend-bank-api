@@ -71,3 +71,50 @@
     "refresh_token": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiZW1wbG95ZWUiLCJpZCI6IjFmYWQyYzAxLWY4MmYtNDFhNi04MjJjLThjYTFiMzIzMjU3NSIsInN1YiI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzQwNTgwNzU1LCJleHAiOjE3NDA1ODA5MzV9.c1bScaBFM8JCeTbhx0myy9CgYHzG6k84299V_HDtTy"
 }
 ```
+
+## Employee Get Me as Employee token Endpoint Details
+-  **Method:** GET 
+-  **URL:**  `/employee/me` 
+ -  **Authentication Required?** Yes 
+-  **Permissions?** No
+- **ErrorMessage:**  All token errors
+#### Response Payload  
+```json
+{
+    "id": "1fad2c01-f82f-41a6-822c-8ca1b3232575",
+    "first_name": "John",
+    "last_name": "Doe",
+    "date_of_birth": "1990-01-01",
+    "gender": "Male",
+    "email": "john.doe@example.com",
+    "phone": "123-456-7890",
+    "address": "123 Main St",
+    "username": "johndoe",
+    "position": "Developer",
+    "department": "IT",
+    "privileges": [
+        "ADMIN"
+    ]
+}
+```
+
+## Employee Get Me as Employee token Endpoint Details
+-  **Method:** GET 
+-  **URL:**  `/employee/privileges` 
+ -  **Authentication Required?** Yes 
+-  **Permissions?** Admin
+- **ErrorMessage:**  All token errors
+#### Response Payload  
+```json
+{
+    "privileges": [
+        "ADMIN",
+        "FILTER",
+        "SEARCH",
+        "TRADE_STOCKS",
+        "VIEW_STOCKS",
+        "CONTRACTS",
+        "NEW_INSURANCES"
+    ]
+}
+```
