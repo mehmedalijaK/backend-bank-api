@@ -225,7 +225,7 @@
 -  **URL:**  `/employee/1fad2c01-f82f-41a6-822c-8ca1b3232575
  -  **Authentication Required?** Yes 
 -  **Permissions?** Admin
-- **ErrorMessage:**  InvalidData()
+- **ErrorMessage:**  InvalidData() || DuplicateEmail(email) || DuplicateUsername(username)
 #### Request Payload  
 
 ```
