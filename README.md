@@ -118,3 +118,26 @@
     ]
 }
 ```
+
+## Admin creates new Employee Endpoint Details
+-  **Method:** POST 
+-  **URL:**  `/employee` 
+ -  **Authentication Required?** Yes 
+-  **Permissions?** Admin
+- **ErrorMessage:**  InvalidData() || DuplicateEmail(email) || DuplicateUsername(username) || PrivilegeDoesNotExist(privilege)
+#### Request Payload  
+```json
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "username": "johndoee",
+  "dateOfBirth": "1990-05-15",
+  "gender": "Male",
+  "email": "johndoe@example.com",
+  "phone": "+1234567890",
+  "address": "123 Main Street, City, Country",
+  "privilege": ["TRADE_STOCKS", "CONTRACTS"],
+  "position": "Software Engineer",
+  "department": "IT"
+}
+```
