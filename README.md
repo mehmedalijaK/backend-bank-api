@@ -98,7 +98,7 @@
 }
 ```
 
-## Employee Get Me as Employee token Endpoint Details
+## Employee get employee privileges Endpoint Details
 -  **Method:** GET 
 -  **URL:**  `/employee/privileges` 
  -  **Authentication Required?** Yes 
