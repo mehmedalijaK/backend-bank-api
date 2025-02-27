@@ -238,3 +238,18 @@ public record UpdateEmployeeDto(
 ) {
 }
 ```
+
+## Verify Employees Endpoint Details
+-  **Method:** Put 
+-  **URL:**  `/verify`
+ -  **Authentication Required?** No 
+-  **Permissions?** No
+- **ErrorMessage:**  InvalidData() || NotFound()
+#### Request Payload  
+
+```
+{
+    "password": "password",
+    "verificationCode": "43af5421-d98b-4000-bc99-80762c0d9c56"
+}
+```
