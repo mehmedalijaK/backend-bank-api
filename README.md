@@ -241,7 +241,7 @@ public record UpdateEmployeeDto(
 
 ## Verify Employees Endpoint Details
 -  **Method:** Post 
--  **URL:**  `/verify`
+-  **URL:**  `/auth/verify`
  -  **Authentication Required?** No 
 -  **Permissions?** No
 - **ErrorMessage:**  InvalidData() || NotFound()
@@ -253,3 +253,10 @@ public record UpdateEmployeeDto(
     "verificationCode": "43af5421-d98b-4000-bc99-80762c0d9c56"
 }
 ```
+
+## Forgot password Endpoint Details
+-  **Method:** Post 
+-  **URL:**  `auth/forgot-password/karisik.me@gmail.com`
+ -  **Authentication Required?** No 
+-  **Permissions?** No
+- **ErrorMessage:**  NotFound()
