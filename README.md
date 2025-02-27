@@ -240,7 +240,7 @@ public record UpdateEmployeeDto(
 ```
 
 ## Verify Employees Endpoint Details
--  **Method:** Put 
+-  **Method:** Post 
 -  **URL:**  `/verify`
  -  **Authentication Required?** No 
 -  **Permissions?** No
